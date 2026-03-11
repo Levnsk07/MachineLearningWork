@@ -42,7 +42,7 @@ scaler = StandardScaler()   # Масштабирование не обходим
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
-X_train = torch.tensor(X_train, dtype=torch.float32) # Тензоры это один из способов многомерного массива оптемезированного для векторов и скаляров
+X_train = torch.tensor(X_train, dtype=torch.float32) # Тензоры это один из способов многомерного массива оптимизированного для векторов и скаляров
 X_test  = torch.tensor(X_test, dtype=torch.float32)
 y_train = torch.tensor(y_train, dtype=torch.float32)
 y_test  = torch.tensor(y_test, dtype=torch.float32)
